@@ -1,0 +1,101 @@
+<!DOCTYPE html><html lang="en"><head><title>Instructors — bdybtz</title><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:'DM Sans',sans-serif;background-color:#1E1E1E;color:#FFF;overflow-x:hidden}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:18px 48px;background:rgba(20,20,20,0.92);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,0.07)}
+.nav-logo{height:38px;width:auto;cursor:pointer}.nav-links{display:flex;gap:28px;list-style:none;align-items:center}
+.nav-links a{text-decoration:none;color:rgba(255,255,255,0.6);font-size:14px;font-weight:400;transition:color 0.2s}.nav-links a:hover{color:#fff}
+.nav-links a.active{background:linear-gradient(120deg,#B8F0D8,#A8C8F0,#A0A8E8);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-weight:600}
+.nav-cta{background:linear-gradient(120deg,#B8F0D8,#A8C8F0,#A0A8E8)!important;color:#1E1E1E!important;font-weight:600!important;padding:10px 24px!important;border-radius:100px;-webkit-text-fill-color:#1E1E1E!important}
+.section{padding:110px 48px;background-color:#1E1E1E}.section.alt{background-color:#252525;border-top:1px solid rgba(255,255,255,0.05);border-bottom:1px solid rgba(255,255,255,0.05)}
+.section-inner{max-width:1100px;margin:0 auto}
+.section-label{display:block;font-size:11px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;background:linear-gradient(120deg,#B8F0D8,#A8C8F0,#A0A8E8);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:14px}
+.section-title{font-size:clamp(30px,3.8vw,50px);font-weight:300;line-height:1.18;color:#fff;margin-bottom:16px}.section-title strong{font-weight:600}
+.section-sub{font-size:15px;font-weight:300;color:rgba(255,255,255,0.48);line-height:1.7;margin-bottom:52px;max-width:560px}
+.btn-primary{background:linear-gradient(120deg,#B8F0D8,#A8C8F0,#A0A8E8);color:#1E1E1E;font-family:'DM Sans',sans-serif;font-size:15px;font-weight:600;padding:15px 36px;border-radius:100px;border:none;cursor:pointer;text-decoration:none;display:inline-block;transition:transform 0.2s,opacity 0.2s}
+.btn-primary:hover{transform:translateY(-2px);opacity:0.88}
+.btn-ghost{background:transparent;color:rgba(255,255,255,0.65);font-family:'DM Sans',sans-serif;font-size:15px;font-weight:400;padding:14px 32px;border-radius:100px;border:1px solid rgba(255,255,255,0.18);cursor:pointer;text-decoration:none;display:inline-block;transition:border-color 0.2s,color 0.2s}
+.btn-ghost:hover{border-color:rgba(255,255,255,0.45);color:#fff}
+footer{padding:52px 48px 36px;background-color:#1A1A1A;border-top:1px solid rgba(255,255,255,0.06);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px}
+.footer-logo{height:36px;width:auto}.footer-text{font-size:13px;color:rgba(255,255,255,0.22);font-weight:300}
+@media(max-width:768px){nav{padding:16px 20px}.nav-links{display:none}.section{padding:80px 20px}footer{padding:40px 20px 28px;flex-direction:column}}
+</style>
+<style>
+.page-hero{position:relative;height:clamp(300px,40vw,500px);overflow:hidden;display:flex;align-items:center;justify-content:center;text-align:center}
+.page-hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;opacity:0.3}
+.page-hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(20,20,20,0.4) 0%,rgba(20,20,20,0.6) 70%,#1E1E1E 100%)}
+.page-hero-content{position:relative;z-index:2;padding:0 24px;margin-top:60px}
+.page-hero-label{display:block;font-size:11px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;background:linear-gradient(120deg,#B8F0D8,#A8C8F0,#A0A8E8);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:14px}
+.page-hero-content h1{font-size:clamp(36px,5vw,64px);font-weight:300;line-height:1.1;margin-bottom:14px}.page-hero-content h1 strong{font-weight:700}
+.page-hero-content p{font-size:16px;font-weight:300;color:rgba(255,255,255,0.55);max-width:480px;margin:0 auto;line-height:1.7}
+.instructor-full{display:grid;grid-template-columns:280px 1fr;gap:64px;align-items:start;max-width:1000px;margin:0 auto}
+.instructor-photo-wrap{position:sticky;top:100px}
+.instructor-circle-lg{width:240px;height:240px;border-radius:50%;overflow:hidden;margin:0 auto 24px;border:3px solid transparent;background:linear-gradient(#1E1E1E,#1E1E1E) padding-box,linear-gradient(120deg,#B8F0D8,#A8C8F0,#A0A8E8) border-box}
+.instructor-circle-lg img{width:100%;height:100%;object-fit:cover;display:block}
+.instructor-sidebar-name{font-size:24px;font-weight:700;text-align:center;margin-bottom:6px}
+.instructor-sidebar-title{font-size:12px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;background:linear-gradient(120deg,#B8F0D8,#A8C8F0,#A0A8E8);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;text-align:center;display:block;margin-bottom:20px}
+.instructor-quals{list-style:none;display:flex;flex-direction:column;gap:10px}
+.instructor-quals li{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:300;color:rgba(255,255,255,0.55);background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:10px;padding:10px 14px}
+.qual-dot{width:8px;height:8px;border-radius:50%;background:linear-gradient(120deg,#B8F0D8,#A0A8E8);flex-shrink:0}
+.bio-section{margin-bottom:40px}
+.bio-section-label{font-size:10px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;background:linear-gradient(120deg,#B8F0D8,#A8C8F0,#A0A8E8);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:12px;display:block}
+.bio-section p{font-size:16px;font-weight:300;color:rgba(255,255,255,0.65);line-height:1.8;margin-bottom:16px}
+.styles-grid{display:flex;flex-wrap:wrap;gap:10px;margin-top:4px}
+.style-tag{font-size:12px;font-weight:500;padding:6px 14px;border-radius:100px;background:linear-gradient(120deg,rgba(184,240,216,0.1),rgba(160,168,232,0.1));border:1px solid rgba(168,200,240,0.18);color:rgba(255,255,255,0.7)}
+.join-cta{background:rgba(255,255,255,0.03);border:1px solid rgba(168,200,240,0.2);border-radius:20px;padding:40px;margin-top:20px;text-align:center;position:relative;overflow:hidden}
+.join-cta::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(120deg,#B8F0D8,#A8C8F0,#A0A8E8)}
+.join-cta h3{font-size:22px;font-weight:700;margin-bottom:10px}.join-cta p{font-size:14px;font-weight:300;color:rgba(255,255,255,0.5);margin-bottom:24px;line-height:1.65}
+@media(max-width:768px){.instructor-full{grid-template-columns:1fr;gap:40px}.instructor-photo-wrap{position:static}}
+</style></head><body>
+<nav><a href="/home"><img src="/images/bdybtz-grad.png" alt="bdybtz" class="nav-logo"></a><ul class="nav-links"><li><a href="/home" >Home</a></li><li><a href="/timetable" >Timetable</a></li><li><a href="/instructors" class='active'>Instructors</a></li><li><a href="/home#events" >Events</a></li><li><a href="/home#pricing" >Pricing</a></li><li><a href="https://docs.google.com/forms/d/e/1FAIpQLSf_m7FHP92vBBoP_SSDaVy1jJO0gRrViv7cBEoC23PnRx-iPg/viewform" target="_blank" class="nav-cta">Join Waitlist</a></li></ul></nav>
+<div class="page-hero">
+  <img src="/images/section-dance2.jpg" alt="" class="page-hero-img">
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <span class="page-hero-label">The Team</span>
+    <h1>Meet the<br><strong>Instructors</strong></h1>
+    <p>Passionate, qualified, and here to make you move.</p>
+  </div>
+</div>
+<section class="section"><div class="section-inner">
+  <div class="instructor-full">
+    <div class="instructor-photo-wrap">
+      <div class="instructor-circle-lg"><img src="/images/sila-profile.png" alt="Sila"></div>
+      <div class="instructor-sidebar-name">Sila</div>
+      <span class="instructor-sidebar-title">Founder &amp; Lead Instructor</span>
+      <ul class="instructor-quals">
+        <li><span class="qual-dot"></span>Licensed Zumba Instructor</li>
+        <li><span class="qual-dot"></span>Dance Fitness Specialist</li>
+        <li><span class="qual-dot"></span>16+ Years Teaching Experience</li>
+        <li><span class="qual-dot"></span>Choreography &amp; Performance</li>
+      </ul>
+    </div>
+    <div>
+      <div class="bio-section">
+        <span class="bio-section-label">About Sila</span>
+        <p>Sila has been dancing her whole life and teaching various styles of dance since 1998. A choreographer, producer, performer, and fitness instructor, she brings a rare depth of experience to every class — grounded equally in artistic practice and the joy of movement for everyone.</p>
+        <p>As Co-Artistic Director of Desert Diamonds NT, a cabaret dance theatre troupe based in the Northern Territory, Sila has performed at some of Australia's most celebrated festivals including Wide Open Spaces, FAB Alice Festival, Desert Festival, Darwin Festival, Darwin Fringe Festival and the Australian Burlesque Festival. She has spent years working with communities, youth and young women through dance and sport and recreation reengagement programs — using movement as a tool for connection, confidence and empowerment.</p>
+        <p>Sila discovered Zumba in 2010 and hasn't looked back. What started as a love of dance, movement and beginner-friendly fitness quickly became something much bigger — a way to bring people together, build confidence and create pure joy in a room. After launching Zumba in Alice Springs, she saw half the town's population come through her classes in that first year alone. Those early days set the tone for everything that followed.</p>
+        <p>Over the years, Zumba has taken Sila on an incredible journey. She spent more than two years as a Zumba Jammer, travelling across Australia to teach choreography to fellow instructors, building deep connections within the ZIN community and presenting alongside international Zumba presenters. She has run her own studio, BodyBeatz, built communities through movement, and seen firsthand how dance fitness can help people feel stronger, happier and more connected.</p>
+        <p>Now based in Darwin, Sila brings a evolved but unmistakable energy to the floor — still driven by the same love of sexy, cool rhythms, great music and classes that feel fun, welcoming and empowering. More than anything, she wants every person who walks into class to feel successful, confident and a little bit sexy too.</p>
+      </div>
+      <div class="bio-section">
+        <span class="bio-section-label">What to expect in class</span>
+        <p>Expect an energy-packed, booty-shaking session where you laugh, sweat and dance your day away. Sila's classes are welcoming for all levels — whether you've never danced before or you've been on the floor for years. The music is great, the vibe is electric, and by the end you'll wonder why you ever did any other kind of workout.</p>
+      </div>
+      <div class="bio-section">
+        <span class="bio-section-label">Styles &amp; specialties</span>
+        <div class="styles-grid">
+          <span class="style-tag">Zumba</span><span class="style-tag">Dance Fitness</span><span class="style-tag">Urban Dance Fitness</span><span class="style-tag">Choreography</span><span class="style-tag">Dance Technique</span><span class="style-tag">Line Dancing</span><span class="style-tag">Stretch &amp; Flow</span><span class="style-tag">Pop Up Classes</span>
+        </div>
+      </div>
+      <div class="join-cta">
+        <h3>Ready to move with Sila?</h3>
+        <p>Join the waitlist to be first in when Bodybeatz launches — and lock in the foundation member rate of $19.99/month.</p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSf_m7FHP92vBBoP_SSDaVy1jJO0gRrViv7cBEoC23PnRx-iPg/viewform" target="_blank" class="btn-primary">Join the Waitlist</a>
+      </div>
+    </div>
+  </div>
+</div></section>
+<footer><img src="/images/bdybtz-grad.png" alt="bdybtz" class="footer-logo"><span class="footer-text">Move your body. Feel the beat. &copy; 2026 bdybtz</span></footer>
+</body></html>
